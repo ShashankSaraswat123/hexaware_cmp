@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° SecureOT by HCL vs. Hexaware</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 3rem;
+            border-radius: 0 0 50% 50% / 8%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png') repeat;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            animation: fadeInUp 2s ease;
+        }
+
+        header h1 span {
+            color: #00c6ff;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .button-container a {
+            background-color: #00c6ff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #008cbf;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #3a6073, #16222a);
+            border-radius: 15px 15px 0 0;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 6px solid #00c6ff;
+            padding-left: 15px;
+            position: relative;
+            animation: fadeInLeft 1.5s ease;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #00c6ff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-left: 2rem;
+            color: #333;
+            animation: fadeInUp 2s ease;
+        }
+
+        ul li::before {
+            content: '\f00c';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #00c6ff;
+            font-size: 1.5rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .comparison-section {
+            margin-bottom: 3rem;
+        }
+
+        .comparison-section h3 {
+            font-size: 2rem;
+            color: #16222a;
+            margin-bottom: 1.2rem;
+            border-left: 6px solid #00c6ff;
+            padding-left: 15px;
+            position: relative;
+            animation: fadeInRight 1.5s ease;
+        }
+
+        .comparison-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #00c6ff;
+        }
+
+        .comparison-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            animation: fadeInUp 2s ease;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #16222a;
+        }
+
+        .next-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .next-button a {
+            background-color: #00c6ff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-button a:hover {
+            background-color: #008cbf;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .comparison-section h3 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .next-button a {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>360° SecureOT <span>by HCL</span> </h1>
+        <div class="button-container">
+            <a href="./HCL_360_secure_ot.html" target="_self">360° SecureOT by HCL</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Overview of 360° SecureOT by HCL</h2>
+            <p><strong>360° SecureOT</strong> by HCL is a comprehensive security solution specifically designed for Operational Technology (OT) environments. It addresses the unique security challenges faced by industrial control systems (ICS), critical infrastructure, and other OT environments. The solution is designed to provide end-to-end protection, ensuring the security and resilience of OT systems against cyber threats.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Real-Time Monitoring:</strong> Continuous monitoring of OT networks to detect anomalies and potential security breaches in real-time.</li>
+                <li><strong>Advanced Threat Detection:</strong> Utilizes AI and machine learning to identify and mitigate sophisticated threats targeting OT environments.</li>
+                <li><strong>Vulnerability Management:</strong> Proactively identifies and mitigates vulnerabilities within OT systems, ensuring the integrity and safety of critical infrastructure.</li>
+                <li><strong>Incident Response:</strong> Provides automated and guided incident response capabilities tailored to the specific needs of OT environments.</li>
+                <li><strong>Compliance Management:</strong> Helps organizations adhere to industry regulations and standards, including NERC CIP, IEC 62443, and others.</li>
+                <li><strong>Network Segmentation:</strong> Implements and manages network segmentation to isolate critical assets and prevent the spread of threats.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Security:</strong> Protects critical OT systems from both internal and external threats, ensuring operational continuity.</li>
+                <li><strong>Operational Efficiency:</strong> Reduces the risk of downtime and disruption in industrial operations by proactively managing vulnerabilities and incidents.</li>
+                <li><strong>Regulatory Compliance:</strong> Assists organizations in meeting stringent regulatory requirements, reducing the risk of non-compliance penalties.</li>
+                <li><strong>Reduced Risk:</strong> Minimizes the likelihood of successful cyberattacks through advanced threat detection and response.</li>
+                <li><strong>Improved Visibility:</strong> Provides comprehensive visibility into OT environments, enabling better decision-making and risk management.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Market Positioning</h2>
+            <p>360° SecureOT is positioned as a leading OT security solution, catering to industries such as manufacturing, energy, utilities, and critical infrastructure. HCL leverages its extensive experience in cybersecurity and industrial automation to offer a solution that is both robust and tailored to the specific needs of OT environments.</p>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Comparison with Hexaware's Current Offerings</h2>
+            <p><strong>Hexaware’s OT Security Solutions:</strong> Hexaware offers cybersecurity services that include threat detection, vulnerability management, and incident response. However, their offerings are more focused on IT environments, with limited specialization in OT security.</p>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Feature Comparison</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>360° SecureOT by HCL</th>
+                    <th>Hexaware OT Security Solutions</th>
+                </tr>
+                <tr>
+                    <td><strong>Real-Time Monitoring</strong></td>
+                    <td>Continuous OT network monitoring</td>
+                    <td>Supported, but more focused on IT environments</td>
+                </tr>
+                <tr>
+                    <td><strong>Advanced Threat Detection</strong></td>
+                    <td>AI-driven detection for OT-specific threats</td>
+                    <td>General threat detection, less tailored to OT</td>
+                </tr>
+                <tr>
+                    <td><strong>Vulnerability Management</strong></td>
+                    <td>Proactive OT vulnerability management</td>
+                    <td>Supported but less specialized for OT environments</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>Automated response tailored for OT</td>
+                    <td>General incident response, with less focus on OT</td>
+                </tr>
+                <tr>
+                    <td><strong>Compliance Management</strong></td>
+                    <td>Focused on OT-specific regulations</td>
+                    <td>General compliance management for broader IT/OT scope</td>
+                </tr>
+                <tr>
+                    <td><strong>Network Segmentation</strong></td>
+                    <td>Specific to OT environments, isolates critical assets</td>
+                    <td>Supported, but less focused on OT-specific segmentation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Backend Tools Used in 360° SecureOT</h2>
+            <ul>
+                <li><strong>AI and Machine Learning Engines:</strong> For advanced threat detection and predictive analytics in OT environments.</li>
+                <li><strong>OT-Specific SIEM:</strong> Security Information and Event Management system designed for OT, integrating with existing OT infrastructure.</li>
+                <li><strong>Vulnerability Scanners:</strong> Tools specifically designed to identify vulnerabilities in industrial control systems and other OT components.</li>
+                <li><strong>Network Monitoring Tools:</strong> Tools that provide deep packet inspection and anomaly detection within OT networks.</li>
+                <li><strong>Compliance Management Platforms:</strong> Platforms designed to manage and document compliance with OT-specific regulations and standards.</li>
+            </ul>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Comparison of Accelerators</h2>
+            <h3>Accelerators in 360° SecureOT:</h3>
+            <ul>
+                <li><strong>OT Threat Intelligence:</strong> Provides threat intelligence specifically tailored to OT environments, enhancing detection and prevention capabilities.</li>
+                <li><strong>Automated Incident Response for OT:</strong> An automated tool that provides predefined playbooks for responding to OT-specific incidents.</li>
+                <li><strong>Compliance Accelerator:</strong> Assists in achieving and maintaining compliance with industry standards relevant to OT.</li>
+            </ul>
+
+            <h3>Hexaware Accelerators:</h3>
+            <ul>
+                <li><strong>ThreatDetect:</strong> A general-purpose threat detection tool that can be adapted for OT but is primarily designed for IT environments.</li>
+                <li><strong>Vulnerability Management Suite:</strong> A toolset for identifying and addressing vulnerabilities, more generalized across IT/OT.</li>
+                <li><strong>Incident Response Automation:</strong> Tools to automate response to security incidents, less focused on OT-specific scenarios.</li>
+            </ul>
+
+            <h3>Comparison of Accelerators:</h3>
+            <table>
+                <tr>
+                    <th>Accelerator</th>
+                    <th>360° SecureOT by HCL</th>
+                    <th>Hexaware</th>
+                </tr>
+                <tr>
+                    <td><strong>OT Threat Intelligence</strong></td>
+                    <td>Tailored threat intelligence for OT environments</td>
+                    <td>No specific OT-focused threat intelligence tool</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>Automated response with OT-specific playbooks</td>
+                    <td>General incident response, less tailored to OT</td>
+                </tr>
+                <tr>
+                    <td><strong>Compliance Management</strong></td>
+                    <td>Compliance Accelerator for OT-specific regulations</td>
+                    <td>General compliance tools, less focused on OT</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Insights and Recommendations</h2>
+            <p>360° SecureOT by HCL is a specialized solution designed to address the unique challenges of securing OT environments. Its focus on OT-specific threat detection, incident response, and compliance makes it a robust choice for industries where operational technology plays a critical role. Hexaware’s offerings, while strong in general cybersecurity, are more IT-centric and do not offer the same level of specialization for OT environments.</p>
+            <p><strong>Recommendation for Hexaware:</strong> To strengthen its position in the OT security market, Hexaware could consider developing more specialized tools and accelerators tailored to OT environments. Enhancing their threat intelligence and incident response capabilities to address the specific needs of industrial control systems and critical infrastructure would make their offerings more competitive in this niche.</p>
+            <p>This comparison highlights that while both companies offer strong cybersecurity solutions, HCL’s 360° SecureOT is more focused on the needs of OT environments, making it a more attractive option for organizations with significant OT security concerns. Hexaware could benefit from developing similar capabilities to better compete in this specialized area.</p>
+        </div>
+
+        <div class="next-button">
+            <a href="./ctix_lti_comp.html" target="_self">Next</a>
+        </div>
+    </main>
+</body>
+
+</html>

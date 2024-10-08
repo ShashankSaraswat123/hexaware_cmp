@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCL Pillars of Differentiation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a237e, #3f51b5);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .pillar-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            padding: 1.5rem;
+            border-top: 4px solid #3f51b5;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .pillar-card h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: #3f51b5;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .pillar-card p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.7;
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid #3f51b5;
+            margin-bottom: 1.5rem;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .pillar-card .button-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .pillar-card .button-group a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2.0rem 2.0rem;
+            font-size: 0.9rem;
+            background-color: #1a237e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 100px;
+
+            height: 60px;
+            /* Fixed height for all buttons */
+            text-align: center;
+        }
+
+        .pillar-card .button-group a:hover {
+            background-color: #3f51b5;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .pillar-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Styles for the floating button */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+            /* Ensures the button stays on top */
+        }
+
+        .floating-button:hover {
+            background-color: #1a237e;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>HCL Pillars of Differentiation</h1>
+    </header>
+    <main class="pillar-grid">
+        <div class="pillar-card">
+            <h2>Digital Workplace</h2>
+            <p>The Digital Workplace tower encompasses a suite of technologies and services aimed at creating a modern, efficient, and collaborative working environment. This transformation focuses on enhancing user experience, increasing productivity, and enabling seamless collaboration across the enterprise.</p>
+            <p>Accelerators are specialized tools and solutions designed to expedite and optimize the implementation of these digital workplace initiatives, driving faster and more effective results.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./workblaze.html">WorkBlaze</a>
+                <a href="./librespace.html">LibreSpace</a>
+                <a href="Kaleidoscope.html">Kaleidoscope</a>
+                <a href="./SIA.html">SIA</a>
+                <a href="./virtuality.html">Virtuality</a>
+                <a href="./Dryice_optibot.html">DRYiCE Optibot</a>
+                <a href="./kalido.html">Kalido</a>
+                <a href="./Flexspace.html">FlexSpace</a>
+                <a href="./digiprint.html">DigiPrint</a>
+                <a href="./Dryice_lucy.html">DRYiCE Lucy</a>
+                <a href="./intellizone.html">Intellizone</a>
+                <a href="./athena.html">Athena</a>
+                <a href="./svalinn.html">Svalinn</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>Hybrid Cloud</h2>
+            <p>The Hybrid Cloud tower is an integrated approach that combines private and public cloud services with on-premises infrastructure. This hybrid model offers greater flexibility, scalability, and cost-efficiency, allowing organizations to optimize their IT infrastructure according to their unique needs.</p>
+            <p>Accelerators in the Hybrid Cloud tower are specialized tools and solutions designed to streamline the deployment, management, and optimization of hybrid cloud environments. These accelerators enable organizations to seamlessly integrate on-premises infrastructure with public and private clouds, ensuring scalability, flexibility, and efficiency in cloud operations.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./hcl_intelli.html">HCL Intelligent Operations Optimizer</a>
+                <a href="./roi_hcl.html">ROI Calculator for AI Ops Products</a>
+                <a href="./hcl_bigfixaex.html">HCL BigFix AEX</a>
+                <a href="./hcl_iautomate.html">HCL iAutomate</a>
+                <a href="./hcl_mycloud.html">HCL MyCloud</a>
+                <a href="./hcl_MyXalytics.html">HCL MyXalytics</a>
+                <a href="./hcl_optibot.html">HCL OptiBot</a>
+                <a href="./hcl_secure_devops.html">HCL Secure DevOps</a>
+                <a href="./hcl_automation_pwer.html">HCL Automation Power Suite</a>
+                <a href="./hcl_bigfix.html">HCL BigFix</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>IoT Tower</h2>
+            <p>The Internet of Things (IoT) tower encompasses technologies and services that connect, manage, and analyze data from physical devices, sensors, and machines. This interconnected ecosystem allows for real-time data collection, monitoring, and automation across various industries, leading to enhanced operational efficiency, improved decision-making, and new business opportunities.</p>
+            <p>Accelerators in the IoT tower are specialized tools and solutions created to enhance the development, deployment, and management of IoT ecosystems. These accelerators facilitate the rapid connection, monitoring, and analysis of smart devices, enabling organizations to harness the full potential of IoT technologies for improved operational efficiency and innovation.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./hcl_nio.html">Net Zero Intelligent Operations (NIO)</a>
+                <a href="./hcl_rmi.html">Real-time Manufacturing Insights (RMI)</a>
+                <a href="./hcl_decode.html">Dynamic Ecosystem of Connected Devices (DECoDe)</a>
+                <a href="./hcl_rii.html">Real-time In-premise Insights (RII)</a>
+                <a href="./hcl_ise.html">Intelligent Secure Edge (ISE) for Smart Cities</a>
+                <a href="./hcl_sio.html">Smart Integrated Operations</a>
+                <a href="./hcl_worker.html">Worker Safety</a>
+                <a href="./hcl_smt.html">Smart Material Tracking (SMT)</a>
+                <a href="./hcl_dct.html">Decentralized Clinical Trials (DCT)</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>Network</h2>
+            <p>The Network tower focuses on providing robust, secure, and scalable networking solutions that enable seamless connectivity, communication, and data transfer across the entire IT infrastructure. This encompasses various aspects of network design, implementation, management, and optimization.</p>
+            <p>Accelerators in the Network tower are specialized tools and solutions that focus on optimizing and enhancing network performance, security, and management. These accelerators ensure that network infrastructures are robust, scalable, and capable of supporting modern enterprise demands, including high-speed data transmission, cloud connectivity, and secure communication.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./hcl_dryicenetbot.html">DRYiCE NetBot</a>
+                <a href="./hcl_sensus.html">Sensus</a>
+                <a href="./hcl_netsecops.html">NetSecOps</a>
+                <a href="./hcl_network_assurance.html">Network Assurance</a>
+                <a href="./hcl_sdwan.html">SD-WAN 2.0</a>
+                <a href="./hcl_netops.html">NetOps 2.0</a>
+                <a href="./hcl_privatr5g.html">Private 5G Network Solutions</a>
+                <a href="./hcl_network_orch.html">Network Orchestration Services</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>Security</h2>
+            <p>The Security Tower in IT infrastructure encompasses a comprehensive set of technologies, policies, and practices designed to protect data, applications, systems, and networks from cyber threats and unauthorized access. This tower ensures the integrity, confidentiality, and availability of information while complying with regulatory requirements.</p>
+            <p>Accelerators in the Security tower are specialized tools and solutions aimed at strengthening an organization's security posture. These accelerators streamline the implementation of security measures, ensuring rapid detection, prevention, and response to threats, thus safeguarding enterprise assets and data in an increasingly complex digital landscape.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./hcl_idaas.html">Identity-as-a-Service (IDaaS)</a>
+                <a href="./hcl_mdr.html">Managed Detection and Response (MDR)</a>
+                <a href="./Hcl_Devsecops.html">DevSecOps Framework</a>
+                <a href="./hcl_cyberseccons.html">Cybersecurity Consulting</a>
+                <a href="./hcl_cloud_security.html">Cloud Security</a>
+                <a href="./hcl_PAM.html">Privileged Access Management (PAM)</a>
+                <a href="./HCL_360_secure_ot.html">SecureOT</a>
+                <a href="./sre_hcl.html">SRE and Observability</a>
+                <a href="./sdn_hcl.html">Secure Software-defined Networking (SDN)</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>Gen AI</h2>
+            <p>The Gen AI (Generative Artificial Intelligence) Tower focuses on leveraging advanced AI technologies to generate content, make decisions, and automate processes across various domains. This includes Natural Language Processing (NLP), computer vision, machine learning, and more, enabling businesses to drive innovation, improve efficiency, and create new value propositions.</p>
+            <p>Accelerators in the Gen AI tower are specialized tools and solutions that expedite the development, deployment, and scaling of generative AI models and applications. These accelerators enable organizations to harness the power of AI for creative content generation, predictive analytics, and automated decision-making, driving innovation and efficiency across various business functions.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./sr_hcl.html">Smart Recruit (Interview Assist)</a>
+                <a href="./dynallm_hcl.html">DynaLLMOps</a>
+                <a href="./sentiment_hcl.html">GenAI Sentiment Analyzer</a>
+                <a href="./genai_testing_hcl.html">GenAI-powered Testing Automation</a>
+                <a href="./genai_email_hcl.html">Generative AI-powered Email EAR (Extract, Act, Respond)</a>
+                <a href="./genai_content_hcl.html">GenAI for Content Generation</a>
+                <a href="./genai_software_hcl.html">GenAI for Software Development</a>
+                <a href="./genai_predictive_hcl.html">GenAI for Predictive Maintenance</a>
+                <a href="./genai_personalized_hcl.html">GenAI for Personalized Marketing</a>
+            </div>
+        </div>
+        <div class="pillar-card">
+            <h2>Sustainability</h2>
+            <p>The Sustainability Tower focuses on integrating environmental, social, and governance (ESG) principles into an organization's strategy and operations to promote long-term sustainability and responsible business practices. This encompasses reducing environmental impact, enhancing social responsibility, and ensuring robust governance frameworks.</p>
+            <p>Accelerators in the Sustainability tower are specialized tools and solutions designed to drive sustainable practices across the enterprise. These accelerators help organizations reduce their environmental impact, optimize resource usage, and achieve sustainability goals by facilitating the integration of eco-friendly technologies and processes into their operations.</p>
+            <p>Mentioned below are their key Accelerators:</p>
+            <div class="button-group">
+                <a href="./greenit_hcl.html">GreenIT</a>
+                <a href="./aquasphere_hcl.html">AquaSphere</a>
+                <a href="./sustainable_sourcing_hcl.html">Sustainable Sourcing</a>
+                <a href="./digital_supply_hcl.html">Digital Supply Chain</a>
+                <a href="./sap_hcl.html">SAP Sustainability Solutions</a>
+                <a href="./semicloud_hcl.html">SemiCloud</a>
+                <a href="./esg_hcl.html">ESG Reporting</a>
+            </div>
+        </div>
+    </main>
+    <style>
+        /* Styles for the floating button */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 1000; /* Ensures the button stays on top */
+        }
+    
+        .floating-button:hover {
+            background-color: #1a237e;
+        }
+    </style>
+    
+    <!-- Add this button to the body section of your HTML -->
+    <button class="floating-button" onclick="window.location.href='https://drive.google.com/file/d/1HUe6qx8JbDvanCGvPU-SC2SP3rPHG7bi/view?usp=sharing'">Details</button>
+    
+</body>
+
+</html>
