@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tech Companies Showcase</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #3f51b5;
+            --accent-color: #ff4081;
+            --highlight-color: #ffa726; /* New color for the standout card */
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --card-bg: #ffffff;
+            --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+
+        .company-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .company-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .company-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #f9f9f9;
+        }
+
+        .company-content {
+            padding: 1.5rem;
+        }
+
+        .company-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .company-content p {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .learn-more {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: var(--transition);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        .learn-more:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* New styles for the standout card */
+        .highlight-card {
+            background-color: var(--highlight-color);
+            color: white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transform: scale(1.05); /* Slightly larger */
+        }
+
+        .highlight-card h2 {
+            color: white;
+        }
+
+        .highlight-card .learn-more {
+            background-color: white;
+            color: var(--highlight-color);
+        }
+
+        .highlight-card .learn-more:hover {
+            background-color: var(--card-bg);
+            color: var(--highlight-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Premium Tech Companies Showcase</h1>
+            <p class="subtitle">Pioneering the Future of Technology</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="company-grid">
+            <div class="company-card">
+                <img src="./HCL-logo.png" alt="HCL Logo">
+                <div class="company-content">
+                    <h2>HCL Technologies</h2>
+                    <p>HCL Technologies is a leading global technology company helping enterprises reimagine their businesses for the digital age.</p>
+                    <a href="./hcl_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <img src="./lti.png" alt="LTIMINDTREE Logo">
+                <div class="company-content">
+                    <h2>LTIMINDTREE</h2>
+                    <p>LTIMINDTREE is a global technology consulting and digital solutions company helping more than 750 clients succeed in a converging world.</p>
+                    <a href="./ltimindtree_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <img src="./Microland_Logo.jpg" alt="MICROLAND Logo">
+                <div class="company-content">
+                    <h2>MICROLAND</h2>
+                    <p>Microland is a leading IT infrastructure services provider committed to making digital happen for enterprises across the world.</p>
+                    <a href="./microland_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <img src="./Mphasis_Logo.jpg" alt="Mphasis Logo">
+                <div class="company-content">
+                    <h2>Mphasis</h2>
+                    <p>Mphasis applies next-generation technology to help enterprises transform businesses globally. Customer centricity is foundational to Mphasis and is reflected in Mphasis' Front2Back™ Transformation approach.</p>
+                    <a href="./Mphasis_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="highlight-card company-card">
+                <img src="./logo8.webp" alt="Innovate to Compete Logo">
+                <div class="company-content">
+                    <h2>Innovate to Compete</h2>
+                    <p>Unlocking competitive insights through cutting-edge IT infrastructure analysis.</p>
+                    <a href="./comparison_acc.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <img src="./kpit_logo.jpg" alt="KPIT Logo">
+                <div class="company-content">
+                    <h2>KPIT</h2>
+                    <p>KPIT is a global technology company specializing in providing software solutions for the automotive and mobility ecosystem.</p>
+                    <a href="./KPIT_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <img src="./Zensar_logo.webp" alt="Zensar Logo">
+                <div class="company-content">
+                    <h2>Zensar</h2>
+                    <p>Zensar is a leading digital solutions and technology services company that specializes in partnering with global organizations across industries on their Digital Transformation journey.</p>
+                    <a href="./Zensar_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="company-card">
+                <img src="./Persistent_logo.jpg" alt="Persistent Technologies Logo">
+                <div class="company-content">
+                    <h2>Persistent Technologies</h2>
+                    <p>Persistent Systems is a global solutions company delivering digital business acceleration, enterprise modernization and next-generation product engineering services.</p>
+                    <a href="./Persistent_pillars.html" class="learn-more">Discover <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Premium Tech Companies Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

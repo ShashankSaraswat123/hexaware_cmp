@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-Track</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Green-Track</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <p><strong>Green-Track</strong> is an initiative and platform by LTIMindtree designed to help organizations manage and reduce their carbon footprint. The platform provides comprehensive tools for monitoring, managing, and reporting greenhouse gas (GHG) emissions, supporting businesses in their journey towards achieving net zero emissions. It is aligned with global sustainability goals and regulatory requirements, such as the Business Responsibility and Sustainability Reporting (BRSR) guidelines.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Emission Management:</strong></li>
+                <p><strong>Description:</strong> Tools for measuring, tracking, and managing GHG emissions across an organization's operations.</p>
+                <p><strong>Functionality:</strong> Includes IoT-based solutions for real-time monitoring and control of emissions, such as flare detection, perimeter emission monitoring, and leak detection.</p>
+
+                <li><strong>Green Facility/Building Management:</strong></li>
+                <p><strong>Description:</strong> Solutions for efficient energy management in buildings and facilities.</p>
+                <p><strong>Functionality:</strong> Features digital twins of buildings, real-time energy monitoring, smart HVAC systems, and predictive analytics for equipment health.</p>
+
+                <li><strong>Green IT:</strong></li>
+                <p><strong>Description:</strong> Services aimed at reducing the carbon footprint of IT infrastructure.</p>
+                <p><strong>Functionality:</strong> Includes deep application analysis to improve the Green IT index, reduce energy consumption, and achieve ISO compliance.</p>
+
+                <li><strong>Automated ESG Reporting:</strong></li>
+                <p><strong>Description:</strong> Automated tools for environmental, social, and governance (ESG) reporting.</p>
+                <p><strong>Functionality:</strong> Simplifies data capture and analysis of emissions, providing real-time dashboards and ensuring compliance with BRSR and other global audit requirements.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Sustainability:</strong> Helps organizations reduce their environmental impact by effectively managing and reducing GHG emissions.</li>
+                <li><strong>Regulatory Compliance:</strong> Ensures adherence to local and global sustainability reporting standards, reducing the risk of non-compliance penalties.</li>
+                <li><strong>Operational Efficiency:</strong> Improves energy management in facilities, leading to cost savings and operational efficiency.</li>
+                <li><strong>Data-Driven Decision Making:</strong> Provides actionable insights through advanced analytics, enabling better decision-making for sustainability initiatives.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Specific Backend Tools Used</h2>
+            <div class="tool">
+                <h3>Green Carpet</h3>
+                <p><strong>Description:</strong> A SaaS platform for tracking and reporting business travel emissions.</p>
+                <p><strong>Functionality:</strong> Automates the process of monitoring and reporting travel emissions, providing real-time data and actionable intelligence.</p>
+            </div>
+            <div class="tool">
+                <h3>Canvas CloudXperienz</h3>
+                <p><strong>Description:</strong> A hybrid cloud management platform integrated with AI for IT operations.</p>
+                <p><strong>Functionality:</strong> Offers comprehensive observability and management of cloud resources, optimizing energy usage and supporting sustainability goals.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Simple Example for Better Understanding</h2>
+            <p>Scenario: A multinational corporation aims to reduce its carbon footprint and comply with global ESG reporting standards.</p>
+            <p>Using Green-Track:</p>
+            <ul>
+                <li><strong>Emission Management:</strong> The corporation implements IoT-based emission monitoring tools to track GHG emissions from its manufacturing plants in real-time.</li>
+                <li><strong>Green Facility Management:</strong> Digital twins of the corporation's office buildings are created, allowing for real-time energy monitoring and optimization of HVAC systems based on predictive analytics.</li>
+                <li><strong>Green IT:</strong> An analysis of the IT infrastructure is conducted to improve the Green IT index, leading to reduced energy consumption and better compliance with ISO standards.</li>
+                <li><strong>Automated ESG Reporting:</strong> The Green Carpet platform is used to automate the capture and reporting of travel emissions, ensuring timely and accurate reporting in line with BRSR requirements.</li>
+            </ul>
+            <p>Outcome: The corporation successfully reduces its carbon footprint, improves energy efficiency, and ensures compliance with sustainability reporting standards, thereby enhancing its overall sustainability performance.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>Green-Track by LTIMindtree provides organizations with the tools they need to monitor, manage, and reduce their carbon footprint. By implementing solutions for emissions management, green facility operations, and IT sustainability, alongside automated ESG reporting, businesses can align with global sustainability goals while optimizing operational efficiency and ensuring regulatory compliance.</p>
+        </div>
+    </main>
+</body>
+
+</html>

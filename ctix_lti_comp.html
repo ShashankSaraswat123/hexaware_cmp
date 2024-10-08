@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTiX Libs by LTIMindtree vs. Hexaware</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 3rem;
+            border-radius: 0 0 50% 50% / 8%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png') repeat;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            animation: fadeInUp 2s ease;
+        }
+
+        header h1 span {
+            color: #00c6ff;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .button-container a {
+            background-color: #00c6ff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #008cbf;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #3a6073, #16222a);
+            border-radius: 15px 15px 0 0;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 6px solid #00c6ff;
+            padding-left: 15px;
+            position: relative;
+            animation: fadeInLeft 1.5s ease;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #00c6ff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-left: 2rem;
+            color: #333;
+            animation: fadeInUp 2s ease;
+        }
+
+        ul li::before {
+            content: '\f00c';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #00c6ff;
+            font-size: 1.5rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .comparison-section {
+            margin-bottom: 3rem;
+        }
+
+        .comparison-section h3 {
+            font-size: 2rem;
+            color: #16222a;
+            margin-bottom: 1.2rem;
+            border-left: 6px solid #00c6ff;
+            padding-left: 15px;
+            position: relative;
+            animation: fadeInRight 1.5s ease;
+        }
+
+        .comparison-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #00c6ff;
+        }
+
+        .comparison-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            animation: fadeInUp 2s ease;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #16222a;
+        }
+
+        .next-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .next-button a {
+            background-color: #00c6ff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-button a:hover {
+            background-color: #008cbf;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .comparison-section h3 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .next-button a {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CTiX Libs <span>by LTIMindtree</span> </h1>
+        <div class="button-container">
+            <a href="./ctix_lti.html" target="_self">CTiX Libs by LTIMindtree</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Overview of Contextual Threat Intelligence (CTiX Libs) by LTIMindtree</h2>
+            <p><strong>Contextual Threat Intelligence (CTiX Libs)</strong> by LTIMindtree is a comprehensive cybersecurity solution that provides actionable threat intelligence tailored to the specific context of an organization’s environment. CTiX Libs helps organizations identify, prioritize, and mitigate cyber threats by leveraging advanced analytics, machine learning, and contextual data enrichment.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Contextual Threat Detection:</strong> Identifies threats in the context of an organization’s specific environment, making the detection more relevant and reducing false positives.</li>
+                <li><strong>Automated Threat Intelligence:</strong> Uses AI and machine learning to automate the collection, analysis, and dissemination of threat intelligence.</li>
+                <li><strong>Real-Time Alerts:</strong> Provides real-time alerts on emerging threats, enabling organizations to respond swiftly.</li>
+                <li><strong>Threat Prioritization:</strong> Prioritizes threats based on their potential impact on the organization, helping security teams focus on the most critical issues.</li>
+                <li><strong>Integration with SIEM/SOAR:</strong> Seamlessly integrates with Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR) platforms for automated threat response.</li>
+                <li><strong>Threat Intelligence Feeds:</strong> Aggregates data from multiple threat intelligence feeds, enriching it with contextual information to provide actionable insights.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Threat Detection:</strong> By focusing on context, CTiX Libs provides more accurate and relevant threat detection.</li>
+                <li><strong>Operational Efficiency:</strong> Automation of threat intelligence tasks reduces the workload on security teams and speeds up response times.</li>
+                <li><strong>Improved Security Posture:</strong> Helps organizations proactively address threats before they can cause harm, improving overall security posture.</li>
+                <li><strong>Reduced False Positives:</strong> Contextual analysis reduces the number of false positives, allowing security teams to focus on real threats.</li>
+                <li><strong>Seamless Integration:</strong> Works well with existing security tools, making it easy to implement and scale within an organization.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Market Positioning</h2>
+            <p>CTiX Libs is positioned as a high-end threat intelligence solution that caters to enterprises with complex security needs. LTIMindtree leverages its expertise in AI and cybersecurity to offer a solution that is both advanced and practical, targeting industries such as finance, healthcare, and critical infrastructure where security is paramount.</p>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Comparison with Hexaware's Current Offerings</h2>
+            <p><strong>Hexaware’s Cybersecurity Solutions:</strong> Hexaware offers a range of cybersecurity services, including threat detection, vulnerability management, and incident response. However, Hexaware’s offerings tend to be more generalized, focusing on broader cybersecurity needs rather than the specific contextual threat intelligence that CTiX Libs provides.</p>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Feature Comparison</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>CTiX Libs by LTIMindtree</th>
+                    <th>Hexaware Cybersecurity Solutions</th>
+                </tr>
+                <tr>
+                    <td><strong>Contextual Threat Detection</strong></td>
+                    <td>Advanced contextual detection tailored to environments</td>
+                    <td>General threat detection without specific contextual focus</td>
+                </tr>
+                <tr>
+                    <td><strong>Automated Threat Intelligence</strong></td>
+                    <td>AI-driven automated threat analysis</td>
+                    <td>Supported but less automation and contextual enrichment</td>
+                </tr>
+                <tr>
+                    <td><strong>Real-Time Alerts</strong></td>
+                    <td>Immediate alerts with contextual relevance</td>
+                    <td>Real-time alerts available but with broader focus</td>
+                </tr>
+                <tr>
+                    <td><strong>Threat Prioritization</strong></td>
+                    <td>Prioritizes threats based on organizational impact</td>
+                    <td>Basic prioritization based on severity</td>
+                </tr>
+                <tr>
+                    <td><strong>SIEM/SOAR Integration</strong></td>
+                    <td>Seamless integration with SIEM and SOAR tools</td>
+                    <td>Supported but may require more customization</td>
+                </tr>
+                <tr>
+                    <td><strong>Threat Intelligence Feeds</strong></td>
+                    <td>Aggregates and enriches multiple threat feeds</td>
+                    <td>Supported, but less focus on contextual enrichment</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Backend Tools Used in CTiX Libs</h2>
+            <ul>
+                <li><strong>AI and Machine Learning Algorithms:</strong> For automated analysis and contextual enrichment of threat data.</li>
+                <li><strong>Threat Intelligence Platforms (TIPs):</strong> Aggregates and correlates threat data from various sources.</li>
+                <li><strong>SIEM/SOAR Platforms:</strong> Integration tools for automated incident response and threat management.</li>
+                <li><strong>Advanced Analytics Engines:</strong> For deep analysis of threat data to uncover hidden patterns and correlations.</li>
+                <li><strong>API Integration:</strong> To connect with various security tools and platforms for seamless data flow.</li>
+            </ul>
+        </div>
+
+        <div class="comparison-section section">
+            <h2>Comparison of Accelerators</h2>
+            <h3>Accelerators in CTiX Libs:</h3>
+            <ul>
+                <li><strong>Contextual Data Enrichment Engine:</strong> Enhances raw threat data with context to make it more actionable.</li>
+                <li><strong>Automated Threat Correlation:</strong> Correlates threat data across multiple sources automatically, reducing the manual workload.</li>
+                <li><strong>Dynamic Threat Prioritization:</strong> Automatically adjusts threat prioritization based on evolving organizational context.</li>
+            </ul>
+
+            <h3>Hexaware Accelerators:</h3>
+            <ul>
+                <li><strong>ThreatDetect:</strong> A general-purpose threat detection tool that offers real-time monitoring and alerts.</li>
+                <li><strong>Vulnerability Management Suite:</strong> A toolset for identifying and addressing vulnerabilities across the organization.</li>
+                <li><strong>Incident Response Automation:</strong> Tools to automate response to security incidents, though less focused on contextual data.</li>
+            </ul>
+
+            <h3>Comparison of Accelerators:</h3>
+            <table>
+                <tr>
+                    <th>Accelerator</th>
+                    <th>CTiX Libs by LTIMindtree</th>
+                    <th>Hexaware</th>
+                </tr>
+                <tr>
+                    <td><strong>Contextual Data Enrichment</strong></td>
+                    <td>Advanced engine for enriching threat data</td>
+                    <td>No specific tool for contextual data enrichment</td>
+                </tr>
+                <tr>
+                    <td><strong>Threat Correlation</strong></td>
+                    <td>Automated correlation across multiple threat feeds</td>
+                    <td>ThreatDetect offers correlation but with broader focus</td>
+                </tr>
+                <tr>
+                    <td><strong>Dynamic Threat Prioritization</strong></td>
+                    <td>Prioritization based on real-time context</td>
+                    <td>Basic prioritization based on fixed criteria</td>
+                </tr>
+                <tr>
+                    <td><strong>Incident Response</strong></td>
+                    <td>Automated and contextualized response integration</td>
+                    <td>Automation supported, but less contextualized</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Insights and Recommendations</h2>
+            <p>CTiX Libs by LTIMindtree is a highly specialized and advanced threat intelligence solution that excels in contextualizing threat data and providing actionable insights tailored to an organization’s specific environment. Hexaware’s cybersecurity solutions, while robust, are more generalized and do not offer the same level of contextual threat intelligence as CTiX Libs.</p>
+            <p><strong>Recommendation for Hexaware:</strong> To enhance its competitive position in the cybersecurity market, Hexaware could consider developing more specialized threat intelligence solutions that focus on contextual data enrichment and automated threat correlation. Integrating these capabilities with their existing security tools could provide a more comprehensive solution for enterprises with complex security needs.</p>
+            <p>This comparison highlights that while both companies offer strong cybersecurity solutions, LTIMindtree’s CTiX Libs stands out for its focus on contextual threat intelligence, making it a more attractive option for organizations looking to enhance their threat detection and response capabilities. By developing similar capabilities, Hexaware could better compete in this specialized area of cybersecurity.</p>
+        </div>
+
+    </main>
+</body>
+
+</html>

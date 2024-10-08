@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Connector Framework for IAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Custom Connector Framework for IAM</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <p><strong>Custom Connector Framework</strong> in the context of Identity and Access Management (IAM) refers to a tailored solution that enables seamless integration between various enterprise applications and IAM systems. This framework is crucial for organizations with complex and heterogeneous IT environments where out-of-the-box (OOB) connectors may not fully meet integration requirements. The Custom Connector Framework allows organizations to create custom connectors that address specific business needs, ensuring efficient and secure identity management across all applications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Custom Connectors:</strong></li>
+                <p><strong>Description:</strong> Custom-built connectors are designed to integrate specific applications or systems with the IAM platform, particularly when OOB connectors are insufficient.</p>
+                <p><strong>Functionality:</strong> These connectors enable automated provisioning, de-provisioning, and synchronization of user identities across disparate systems, ensuring that all user data is consistent and up-to-date.</p>
+
+                <li><strong>Role-Based Access Control (RBAC):</strong></li>
+                <p><strong>Description:</strong> The framework supports RBAC, which assigns permissions based on user roles within the organization.</p>
+                <p><strong>Functionality:</strong> It ensures that access rights are appropriately distributed based on job functions, reducing the risk of unauthorized access and enhancing security.</p>
+
+                <li><strong>Automation and Orchestration:</strong></li>
+                <p><strong>Description:</strong> The framework includes automation features that streamline identity management processes such as user onboarding, offboarding, and role changes.</p>
+                <p><strong>Functionality:</strong> Automation reduces manual intervention, speeds up the provisioning process, and minimizes errors, thereby improving operational efficiency.</p>
+
+                <li><strong>Integration with Enterprise Applications:</strong></li>
+                <p><strong>Description:</strong> Custom connectors integrate with a wide range of enterprise applications, including HR systems, CRM platforms, and other business-critical tools.</p>
+                <p><strong>Functionality:</strong> This integration ensures that identity data flows seamlessly between the IAM system and other applications, providing a unified view of user identities across the organization.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Flexibility:</strong> Custom connectors provide the flexibility to integrate virtually any application with the IAM system, regardless of its complexity or uniqueness.</li>
+                <li><strong>Improved Security:</strong> By automating identity management processes and ensuring that all applications are connected, the framework enhances security by reducing the chances of orphan accounts and unauthorized access.</li>
+                <li><strong>Scalability:</strong> As organizations grow and add new applications, custom connectors can be developed to integrate these applications into the IAM system without disrupting existing processes.</li>
+                <li><strong>Compliance and Reporting:</strong> The framework supports compliance by ensuring that all identity management processes are documented and auditable, making it easier to meet regulatory requirements.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Specific Backend Tools and Their Functionality</h2>
+            <div class="tool">
+                <h3>Mphasis Custom Connector Framework</h3>
+                <p><strong>Description:</strong> Mphasis provides a robust framework for developing custom connectors that integrate seamlessly with their IAM solutions.</p>
+                <p><strong>Functionality:</strong> The framework supports the creation of connectors that automate identity provisioning and management across a wide range of applications, ensuring consistency and compliance.</p>
+            </div>
+
+            <div class="tool">
+                <h3>SailPoint Integration</h3>
+                <p><strong>Description:</strong> Mphasis integrates SailPoint with their custom connectors to provide a comprehensive IAM solution.</p>
+                <p><strong>Functionality:</strong> This integration enables advanced role mining, aggregation, and certification processes, ensuring that access rights are managed efficiently and securely.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Example for Better Understanding</h2>
+            <p>Imagine a large financial institution that uses multiple legacy systems for different business functions. These systems are not natively compatible with modern IAM platforms. Using the Custom Connector Framework, the institution can develop connectors that allow these legacy systems to integrate with the IAM platform. This ensures that user identities are consistently managed across all systems, reducing the risk of security breaches and improving overall operational efficiency.</p>
+        </div>
+    </main>
+</body>
+
+</html>

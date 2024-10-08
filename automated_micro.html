@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Data Labeling Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Automated Data Labeling Overview</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <p><strong>Automated Data Labeling</strong> refers to the process of using machine learning algorithms and software tools to automatically annotate or tag datasets. This process is essential in creating training datasets for machine learning models, especially in scenarios where manual labeling is time-consuming and labor-intensive. Automated data labeling accelerates the model training process by providing high-quality labeled data at scale.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Pre-Labeling Techniques:</strong></li>
+                <p><strong>Description:</strong> Pre-labeling involves using a pre-trained model to label new data. This method helps in quickly tagging large datasets, which can be further refined manually if necessary.</p>
+
+                <li><strong>Model-Based Labeling:</strong></li>
+                <p><strong>Description:</strong> In this approach, models trained on similar datasets are used to predict labels for new data. These predictions can then be validated and corrected by human annotators.</p>
+
+                <li><strong>Active Learning:</strong></li>
+                <p><strong>Description:</strong> This is an iterative process where the model actively queries the most informative data points for labeling, thereby improving its performance with minimal labeled data.</p>
+
+                <li><strong>Automation Tools:</strong></li>
+                <p><strong>Description:</strong> Tools such as AI-driven platforms that use NLP (Natural Language Processing) and CV (Computer Vision) techniques to automate the labeling process.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Scalability:</strong> Automated labeling can process vast amounts of data, making it feasible to work with large datasets that would be impractical to label manually.</li>
+                <li><strong>Cost Efficiency:</strong> Reduces the need for extensive human labor, thereby cutting down costs associated with manual data labeling.</li>
+                <li><strong>Consistency and Accuracy:</strong> Automated processes minimize human errors, ensuring consistent and accurate labeling across the dataset.</li>
+                <li><strong>Faster Model Training:</strong> Speeds up the creation of labeled datasets, thereby accelerating the machine learning model development cycle.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Backend Tools and Functionality</h2>
+            <div class="tool">
+                <h3>AWS Sagemaker Ground Truth</h3>
+                <p><strong>Description:</strong> This tool provides an integrated environment for building accurate training datasets quickly. It uses active learning to identify the most uncertain samples and presents them for manual labeling, ensuring efficient and accurate labeling processes.</p>
+            </div>
+            <div class="tool">
+                <h3>Labelbox</h3>
+                <p><strong>Description:</strong> A collaborative data labeling platform that supports a range of data types including images, text, and video. It integrates automation through model-assisted labeling, where models suggest labels that are then reviewed and corrected by humans.</p>
+            </div>
+            <div class="tool">
+                <h3>Microland’s Automated Ops</h3>
+                <p><strong>Description:</strong> Microland utilizes its AI and ML-powered IT analytics platforms that include predictive analytics and prescriptive solutions. These platforms are used in environments like AWS for managing cloud operations, where automated data labeling is part of the overall automation and analytics framework.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Simple Example</h2>
+            <p>Imagine a scenario where a retail company wants to analyze customer reviews to identify the sentiment (positive, neutral, or negative) expressed in each review. With automated data labeling, a pre-trained sentiment analysis model can be used to automatically tag each review. Initially, the model might be trained on a small labeled dataset, and as it processes more reviews, it becomes more accurate. This saves the company significant time and resources, as only a subset of the data requires manual review, which the automated system can refine over time.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>Microland’s use of such tools in their operations demonstrates the practical application of automated data labeling in real-world scenarios, enabling businesses to scale their data operations while maintaining accuracy and efficiency.</p>
+        </div>
+    </main>
+</body>
+
+</html>
