@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intelligence Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Threat Intelligence Platform</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <p><strong>Threat Intelligence Platform (TIP)</strong> is a crucial component of modern cybersecurity strategies. It collects, processes, and analyzes data from various sources to identify potential security threats. By leveraging both commercial and open-source intelligence feeds, TIPs help organizations proactively defend against cyber threats by providing actionable insights, real-time alerts, and threat hunting capabilities.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Threat Data Aggregation:</strong></li>
+                <p><strong>Description:</strong> TIPs aggregate data from various sources, including global threat intelligence feeds, dark web monitoring, and internal security logs.</p>
+                <p><strong>Functionality:</strong> This comprehensive data collection enables a holistic view of potential threats, allowing organizations to stay ahead of emerging risks.</p>
+
+                <li><strong>AI/ML-Driven Analytics:</strong></li>
+                <p><strong>Description:</strong> Advanced analytics powered by Artificial Intelligence (AI) and Machine Learning (ML) are used to detect patterns and predict future threats.</p>
+                <p><strong>Functionality:</strong> These tools analyze vast amounts of data to identify anomalies and predict potential security breaches, providing early warning to security teams.</p>
+
+                <li><strong>Incident Response and Automation:</strong></li>
+                <p><strong>Description:</strong> TIPs integrate with Security Operations Centers (SOCs) to automate incident response.</p>
+                <p><strong>Functionality:</strong> Automated response actions, such as isolating affected systems or blocking malicious IP addresses, can be triggered based on threat intelligence, significantly reducing response times.</p>
+
+                <li><strong>Vulnerability Intelligence:</strong></li>
+                <p><strong>Description:</strong> TIPs provide vulnerability intelligence by identifying and prioritizing vulnerabilities based on their exploitability and potential impact.</p>
+                <p><strong>Functionality:</strong> This helps organizations focus their remediation efforts on the most critical vulnerabilities, enhancing their overall security posture.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Proactive Threat Management:</strong> By providing real-time insights and predictive analytics, TIPs enable organizations to anticipate and prevent cyber attacks before they occur.</li>
+                <li><strong>Improved Incident Response:</strong> The integration of automated response capabilities allows for faster and more effective mitigation of security incidents.</li>
+                <li><strong>Enhanced Visibility:</strong> TIPs offer comprehensive visibility into the threat landscape, including hidden threats on the dark web, ensuring that no potential risk goes unnoticed.</li>
+                <li><strong>Operational Efficiency:</strong> Automation and AI-driven analytics reduce the manual effort required to manage threats, allowing security teams to focus on more strategic tasks.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Specific Backend Tools and Their Functionality</h2>
+            <div class="tool">
+                <h3>Mphasis Threat Intelligence Solutions</h3>
+                <p><strong>Description:</strong> Mphasis provides a threat intelligence platform that integrates with various security tools to deliver comprehensive threat detection, monitoring, and response capabilities.</p>
+                <p><strong>Functionality:</strong> This platform leverages AI and ML to provide contextualized threat intelligence, real-time incident detection, and automated response actions, ensuring a robust security posture.</p>
+            </div>
+
+            <div class="tool">
+                <h3>Dark Web Monitoring</h3>
+                <p><strong>Description:</strong> A feature that monitors the dark web for threats and potential breaches related to an organization’s assets.</p>
+                <p><strong>Functionality:</strong> Dark web monitoring helps in early detection of stolen credentials, leaked data, and other indicators of compromise, allowing organizations to take preventive measures.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Example for Better Understanding</h2>
+            <p>Consider a financial institution that uses a Threat Intelligence Platform to monitor global threat feeds, internal network traffic, and dark web forums. The TIP detects a spike in activity related to a known malware variant targeting financial institutions. Using AI, the platform predicts that the malware may soon target the institution. The TIP automatically triggers the SOC to isolate vulnerable systems, block suspicious IP addresses, and issue alerts to the security team. This proactive approach helps prevent a potential breach, safeguarding the institution's assets and customer data.</p>
+        </div>
+    </main>
+</body>
+
+</html>

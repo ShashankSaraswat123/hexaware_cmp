@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Detection and Response (XDR) Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Extended Detection and Response (XDR) Overview</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Overview</h2>
+            <p><strong>Extended Detection and Response (XDR)</strong> is an advanced cybersecurity approach that integrates data from multiple security layers—such as endpoints, networks, servers, and cloud workloads—to detect, analyze, and respond to threats more effectively. Unlike traditional security systems that work in silos, XDR provides a unified view of security incidents, enabling faster and more comprehensive threat detection and response.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Data Integration:</strong></li>
+                <p><strong>Description:</strong> Gathers and correlates data from various security tools and sources.</p>
+                <p><strong>Functionality:</strong> Integrates logs, alerts, and other telemetry from endpoints, networks, cloud services, and more, providing a holistic view of the security landscape.</p>
+
+                <li><strong>Automated Threat Detection:</strong></li>
+                <p><strong>Description:</strong> Utilizes machine learning and analytics to identify potential threats.</p>
+                <p><strong>Functionality:</strong> Analyzes patterns and behaviors to detect anomalies and potential malicious activities, often before they manifest as incidents.</p>
+
+                <li><strong>Response Orchestration:</strong></li>
+                <p><strong>Description:</strong> Automates response actions based on predefined rules and threat intelligence.</p>
+                <p><strong>Functionality:</strong> Coordinates responses across various systems and platforms, including isolating affected systems, notifying relevant teams, and triggering remediation processes.</p>
+
+                <li><strong>Cross-Layer Visibility:</strong></li>
+                <p><strong>Description:</strong> Provides comprehensive visibility across multiple security domains.</p>
+                <p><strong>Functionality:</strong> Allows security teams to see and understand the full scope of an attack, from initial access to lateral movement and data exfiltration.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Improved Incident Response:</strong> Faster detection and response to threats, reducing the dwell time of attackers.</li>
+                <li><strong>Enhanced Visibility:</strong> Unified view of security data across the enterprise, providing deeper insights into potential threats.</li>
+                <li><strong>Cost Efficiency:</strong> Integrates multiple security tools and processes, reducing the need for disparate solutions and simplifying security management.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Backend Tools and Technologies</h2>
+            <div class="tool">
+                <h3>Microsoft Defender</h3>
+                <p><strong>Description:</strong> A suite of XDR tools including Microsoft Defender for Endpoint, Office 365, and Identity.</p>
+                <p><strong>Functionality:</strong> Provides comprehensive protection across endpoints, identities, emails, and cloud platforms.</p>
+            </div>
+
+            <div class="tool">
+                <h3>Securonix</h3>
+                <p><strong>Description:</strong> An analytics-driven SIEM platform.</p>
+                <p><strong>Functionality:</strong> Offers advanced threat detection and response capabilities, leveraging big data analytics and machine learning.</p>
+            </div>
+
+            <div class="tool">
+                <h3>Cortex XDR by Palo Alto Networks</h3>
+                <p><strong>Description:</strong> An XDR solution that integrates endpoint, network, and cloud data.</p>
+                <p><strong>Functionality:</strong> Provides AI-powered detection, investigation, and automated response.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Simple Example</h2>
+            <p>A business using Microsoft Defender XDR can detect a phishing attempt through Office 365. The system automatically isolates the affected endpoint, alerts the security team, and provides insights into how the phishing attempt bypassed initial defenses. The integrated data helps quickly contain and remediate the threat, preventing further damage.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p><strong>Extended Detection and Response (XDR)</strong> enhances security by providing integrated, automated, and intelligent threat detection and response across the organization's IT environment.</p>
+        </div>
+    </main>
+</body>
+
+</html>

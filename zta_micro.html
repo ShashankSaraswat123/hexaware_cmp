@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Trust Architecture (ZTA) Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #16222a;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3a6073;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: #16222a;
+            font-weight: 600;
+        }
+
+        .tool {
+            margin-bottom: 1.5rem;
+        }
+
+        .tool h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #3a6073;
+            font-weight: 600;
+        }
+
+        .tool p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .section-example {
+            background: linear-gradient(135deg, #3a6073, #16222a);
+            color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .section-example p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-example {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zero Trust Architecture (ZTA)</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <p><strong>Zero Trust Architecture (ZTA)</strong> is a security framework that assumes no user, device, or network segment is inherently trustworthy. Instead of relying on traditional perimeter defenses, ZTA enforces strict identity verification, continuous monitoring, and least-privilege access for every user and device attempting to access resources, regardless of their location within or outside the network.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Components and Features</h2>
+            <ol>
+                <li><strong>Identity and Access Management (IAM):</strong></li>
+                <p><strong>Description:</strong> Central to ZTA, IAM ensures that every user and device is authenticated and authorized before gaining access to any resource. This includes Multi-Factor Authentication (MFA), Single Sign-On (SSO), and role-based access controls.</p>
+
+                <li><strong>Micro-Segmentation:</strong></li>
+                <p><strong>Description:</strong> The network is divided into small, isolated segments, reducing the ability of threats to move laterally across the network. Each segment is protected by strict access controls and monitoring.</p>
+
+                <li><strong>Continuous Monitoring:</strong></li>
+                <p><strong>Description:</strong> ZTA continuously monitors all activities within the network, using advanced analytics and machine learning to detect and respond to anomalies in real-time.</p>
+
+                <li><strong>Policy Enforcement:</strong></li>
+                <p><strong>Description:</strong> ZTA employs dynamic policy enforcement based on user identity, device health, location, and behavior. These policies are enforced at every access point, ensuring that access is granted only under appropriate conditions.</p>
+
+                <li><strong>Integration with Cloud and Remote Access:</strong></li>
+                <p><strong>Description:</strong> ZTA is designed to secure access across diverse environments, including on-premises, cloud, and hybrid infrastructures. It integrates with cloud security platforms like Secure Access Service Edge (SASE) to provide consistent protection across all access points.</p>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Enhanced Security:</strong> By verifying every access request and minimizing trust, ZTA significantly reduces the risk of unauthorized access and lateral movement by attackers.</li>
+                <li><strong>Scalability:</strong> ZTA is scalable and adaptable, making it suitable for organizations of all sizes and capable of securing diverse environments, from on-premises data centers to cloud infrastructures.</li>
+                <li><strong>Improved Compliance:</strong> Continuous monitoring and detailed logging help organizations meet regulatory compliance requirements by providing clear audit trails.</li>
+                <li><strong>User Experience:</strong> ZTA can improve user experience by implementing user-friendly authentication methods like SSO and passwordless logins while maintaining robust security.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Specific Backend Tools Used</h2>
+            <div class="tool">
+                <h3>Microsoft Azure Active Directory (Azure AD)</h3>
+                <p><strong>Description:</strong> Azure AD manages user identities and access controls, integrating with ZTA to enforce MFA, SSO, and conditional access policies.</p>
+            </div>
+            <div class="tool">
+                <h3>Zscaler Zero Trust Exchange</h3>
+                <p><strong>Description:</strong> Zscaler’s platform provides secure access to applications and data from any location, enforcing Zero Trust principles for cloud and remote environments.</p>
+            </div>
+            <div class="tool">
+                <h3>Intelligeni NetOps Platform</h3>
+                <p><strong>Description:</strong> Microland’s platform integrates monitoring, analytics, and automation to support ZTA by continuously assessing user behavior, device compliance, and enforcing access policies.</p>
+            </div>
+        </div>
+
+        <div class="section section-example">
+            <h2>Simple Example</h2>
+            <p>Consider a multinational corporation with employees working remotely from various locations. Under a traditional security model, employees might use a VPN to access corporate resources, which can be a single point of failure if compromised. With ZTA, every access request—from every user, device, and location—is scrutinized. For example, an employee logging in from an unfamiliar location is prompted for additional authentication, and their device is checked for compliance with security policies. Even after access is granted, the system continuously monitors for unusual behavior, ready to revoke access or isolate the device if a threat is detected.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>Microland’s approach to ZTA ensures that organizations can implement these principles effectively, securing access to critical resources without compromising user experience or operational efficiency.</p>
+        </div>
+    </main>
+</body>
+
+</html>
